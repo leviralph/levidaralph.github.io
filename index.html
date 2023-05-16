@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <!---Font and icons --->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+</head>
+<body>
+    <div class="hero-header">
+        <div class="wrapper">
+            <header>
+                <div class="logo">
+                    <i class="fa-solid fa-a"></i>
+                    <div class="logo-text">Ralph Vincent Levida</div>
+                </div>
+                <nav>
+                    <div class="togglebtn">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                    <ul class="navlinks">
+                        <li><a href="index.html" target="_blank">Home</a></li>
+                        <li><a href="resume.html">Portfolio</a></li>
+                        <li><a href="website.html">QR Generator</a></li>
+                        <li><a href="gallery.html">Gallery for Fun</a></li>
+                        
+
+                    </ul>
+                </nav>
+            </header>
+            <div class="container">
+                <div class="hero-pic">
+                    <img src="profile.jpg" alt="profile pic">
+                </div>
+                <div class="hero-text">
+                    <h5>Hi I'm <span class="input">Frontend Developer</span></h5>
+                    <h1>Ralph Vincent Levida</h1>
+                    <p> From University of Batangas MAIN
+                        <br>Fresh Graduate na umay na umay ng manood sa youtube para matuto sa mga di alam gawin tas
+                        magtatanong kay pareng Chat GPT kapag last resort na.
+                    </p>
+                    
+
+                    <div class="btn-group">
+                        <a href="resume.PNG" download class="btn active">Download CV</a>
+                        <a href="contact.html" class="btn">Contact</a>
+                    </div>
+
+                    <div class="social">
+                        <a href="https://www.facebook.com/profile.php?id=100081669795317"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="https://www.linkedin.com/in/ralph-levida-a05ab3275/"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="https://www.instagram.com/lev14s/"><i class="fa-brands fa-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- typed js for typing text effect -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.10/typed.min.js"></script>
+    <script>
+        /*creating button click show hide navbar */
+
+        var togglebtn=document.querySelector(".togglebtn");
+        var nav=document.querySelector(".navlinks");
+        var links=document.querySelector(".navlinks li");
+
+        togglebtn.addEventListener("click", function(){
+            this.classList.toggle("click");
+            nav.classList.toggle("open");
+
+        })
+
+        var typed=new Typed(".input",{
+            strings:["Front Developer", "UX Designer", "Student","Web Developer"],
+            typedSpeed:70,
+            backSpeed:50,
+            loop:true
+        })
+
+        function Myfunction(){
+            location.replace("https://www.facebook.com/profile.php?id=100081669795317")
+        }
+        
+    </script>
+</body>
+</html>
